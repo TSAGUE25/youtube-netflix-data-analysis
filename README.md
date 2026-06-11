@@ -1,4 +1,4 @@
-# Analyse de Données YouTube/Netflix
+﻿# Analyse de Données YouTube/Netflix
 
 > **EDA complète, tendances temporelles et storytelling data sur 100 000 vidéos simulées**
 
@@ -114,9 +114,9 @@ Intégration YouTube Data API v3. NLP sur titres/descriptions. Prédiction viral
 
 ---
 
-## Auteur
+## Contributors
 
-**Emmanuel TSAGUE** — Data Scientist / Data Analyst
+**TSAGUE Emmanuel** — Data Scientist / Data Analyst
 Domaine : EDA · Data Analysis · Visualisation · Storytelling
 GitHub : [TSAGUE25](https://github.com/TSAGUE25)
 
