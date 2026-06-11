@@ -1,14 +1,13 @@
 ﻿# CAS D'USAGE 15 — Analyse de Données YouTube/Netflix
 ## EDA complète, tendances temporelles et storytelling data sur des données publiques simulées
 
-> **Auteur :** Emmanuel TSAGUE — Data Scientist / Data Analyst  
+> **Auteur :** TSAGUE EMMANUEL — Data Scientist / Data Analyst  
 > **Domaine :** EDA, Analyse exploratoire, Visualisation, Storytelling  
 > **Repository GitHub :** `youtube-netflix-data-analysis`  
 > **Statut :** Portfolio — données simulées  
 > **Date :** Juin 2026
 
 ---
-
 ## 1. TITRE ET RÉSUMÉ EXÉCUTIF
 
 **"Analyse exploratoire de 100 000 vidéos YouTube simulées : tendances temporelles, catégories dominantes, géographie du contenu et storytelling data"**
@@ -20,7 +19,6 @@ Ce projet analyse 100 000 entrées simulées du catalogue vidéo (inspiré de Yo
 **Insights simulés :** La catégorie "Tech" croît de 340 % en 3 ans | Le taux d'engagement baisse de 12 % depuis 18 mois | 3 pays représentent 67 % des vues.
 
 ---
-
 ## 2. GÉNÉRATION DES DONNÉES SIMULÉES
 
 ```python
@@ -101,7 +99,6 @@ print(df.describe(include="all").T.head(20))
 ```
 
 ---
-
 ## 3. EDA — PROFIL DES DONNÉES
 
 ```python
@@ -146,7 +143,6 @@ plt.savefig("figures/yt_eda_overview.png", dpi=150, bbox_inches="tight")
 ```
 
 ---
-
 ## 4. TENDANCES TEMPORELLES — ANALYSE PAR TRIMESTRE
 
 ```python
@@ -197,7 +193,6 @@ plt.savefig("figures/yt_tendances.png", dpi=150, bbox_inches="tight")
 ```
 
 ---
-
 ## 5. KPIs CONTENU — TABLEAU DE BORD
 
 ```python
@@ -227,7 +222,6 @@ print(df_virales[["video_id", "categorie", "pays", "vues", "taux_engagement"]].h
 ```
 
 ---
-
 ## 6. ANALYSE GÉOGRAPHIQUE
 
 ```python
@@ -247,7 +241,6 @@ print(f"\nTop 3 pays = {total_3_pays:.1f} % des vues totales")
 ```
 
 ---
-
 ## 7. STORYTELLING DATA — STRUCTURE NARRATIVE
 
 > **Storytelling data :** art de présenter des analyses sous forme de récit avec une structure narrative (contexte → problème → données → insights → recommandations). Transforme des chiffres en décisions actionnables.
@@ -268,7 +261,6 @@ STRUCTURE DU STORY :
 ```
 
 ---
-
 ## 8. ARCHITECTURE GITHUB
 
 ```
@@ -288,70 +280,6 @@ youtube-netflix-data-analysis/
 ```
 
 ---
-
-## 9. README GITHUB
-
-```markdown
-# YouTube/Netflix Data Analysis
-## EDA complète, tendances temporelles et storytelling sur données simulées
-
-> **Auteur :** Emmanuel TSAGUE | **Données :** simulées (100 000 vidéos)
-
-## Insights simulés
-Tech +340% en 3 ans · Engagement -12% · Top 3 pays = 67% des vues
-
-## Techniques
-EDA · Visualisation matplotlib/seaborn · Analyse temporelle
-KPIs contenus · Storytelling data · Pandas avancé
-```
-
----
-
-## 10. VERSION CV
-
-> Analyse exploratoire de 100 000 entrées vidéo simulées (YouTube/Netflix) : calcul de KPIs contenu (taux d'engagement, vues médianes, top catégories), analyse des tendances temporelles trimestrielles, heatmap de corrélations, analyse géographique des audiences, détection de vidéos virales (99e percentile), storytelling data structuré — Python, pandas, matplotlib, seaborn.
-
----
-
-## 11. VERSION ENTRETIEN
-
-"J'ai réalisé une EDA complète sur 100 000 vidéos simulées. Le workflow : d'abord comprendre la structure et les types de données, puis identifier les outliers (les vues suivent une loi puissance — quelques vidéos virales captent une part disproportionnée), puis analyser les tendances temporelles par trimestre et par catégorie. L'insight principal simulé : l'engagement baisse régulièrement depuis 18 mois — ce qui suggère soit une saturation du marché soit un changement de comportement des viewers. J'ai structuré l'analyse comme un storytelling data : contexte → finding → implication → recommandation."
-
----
-
-## 12. POST LINKEDIN
-
-**100 000 vidéos. Comment trouver les insights actionnables parmi le bruit ?**
-
-Cas d'usage EDA sur des données simulées YouTube/Netflix.
-
-Trois questions métier → trois types d'analyses différents :
-
-**"Quelles catégories croissent ?"** → Analyse temporelle trimestrielle
-La Tech a presque quadruplé en 3 ans (simulé). Gaming stagne. Education accélère.
-
-**"L'engagement se dégrade-t-il ?"** → Tendance temporelle sur KPI
-−12% sur 18 mois. Signal fort, pas de bruit.
-
-**"D'où viennent les vues ?"** → Analyse géographique
-3 pays = 67% des vues. Les marchés émergents (Inde, Brésil) dépassent l'Europe.
-
-La vraie compétence en EDA : poser les bonnes questions avant d'explorer les données.
-
-`#EDA` `#DataAnalysis` `#Storytelling` `#YouTube` `#Visualisation` `#DataScience`
-
----
-
-## 13. QUESTIONS D'ENTRETIEN
-
-**Q : Qu'est-ce que la loi puissance dans les données de vues YouTube ?**
-> Les vues suivent une distribution de Pareto : quelques vidéos (1 %) captent une part disproportionnée des vues totales (90 % ou plus). C'est une distribution à longue queue. En pratique, la médiane est bien meilleure que la moyenne pour représenter une vidéo "typique" — la moyenne est fortement tirée vers le haut par les vidéos virales.
-
-**Q : Comment structurez-vous une présentation EDA pour un non-technique ?**
-> Je suis la structure narrative : (1) une question métier concrète comme titre, (2) la donnée clé en premier, (3) le contexte ensuite, (4) l'implication pour le business. Je limite les graphiques à 3 ou 4 sur une présentation. Je traduis chaque insight en action : pas "l'engagement baisse" mais "augmenter la durée maximale à 12 min pourrait compenser la baisse d'engagement".
-
----
-
 ## 14. COMPÉTENCES DÉMONTRÉES
 
 | Compétence | Preuve |
@@ -364,4 +292,22 @@ La vraie compétence en EDA : poser les bonnes questions avant d'explorer les do
 
 ---
 
-*Fin du document — Emmanuel TSAGUE — CAS 15 — Analyse YouTube/Netflix*
+*Fin du document — TSAGUE EMMANUEL — CAS 15 — Analyse YouTube/Netflix*
+---
+
+## Contact & Liens
+
+**TSAGUE EMMANUEL** - Data Scientist
+
+| | |
+|---|---|
+| Email | [emmatsague@yahoo.fr](mailto:emmatsague@yahoo.fr) |
+| GitHub | [github.com/TSAGUE25](https://github.com/TSAGUE25) |
+| Formation | Datascientest 2024 |
+| Experience | EDF MAD EDVANCE |
+| Domaines | Machine Learning - Data Analysis - Energie |
+
+---
+
+> Toutes les donnees de ce depot sont simulees et anonymisees.  
+> Aucune donnee reelle ou confidentielle n'est presente.
